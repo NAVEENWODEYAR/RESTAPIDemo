@@ -1,7 +1,5 @@
 package com.api.controller;
 
-import java.util.Scanner;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,5 +12,10 @@ public class TestController {
 	@GetMapping("/test/{st}")
 	public String greetMsg(@PathVariable String st) {
 		return "Welcome to the family "+st;
+	}
+	
+	@GetMapping("/sum")
+	public int sum() {
+		return testService.add();
 	}
 }
