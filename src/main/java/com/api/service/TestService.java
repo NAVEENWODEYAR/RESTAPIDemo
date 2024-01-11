@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class TestService {
 	
+	public String test(){
+		return "**";
+	}
 	public int add() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("\nEnter the int values:");
