@@ -8,7 +8,7 @@ public class RestApiDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiDemoApplication.class, args);
-		System.out.println("Debugger started!");
+		System.out.println("Representational State Transfer!");
 	}
 
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.api.service.TestService;
 
 @RestController
-@RequestMapping("/rest")
+@RequestMapping("/restAPI")
 public class TestController {
 
 	@Autowired
