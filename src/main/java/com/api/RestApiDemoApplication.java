@@ -10,5 +10,4 @@ public class RestApiDemoApplication {
 		SpringApplication.run(RestApiDemoApplication.class, args);
 		System.out.println("Representational State Transfer!");
 	}
-
 }

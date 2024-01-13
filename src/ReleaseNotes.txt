@@ -1,3 +1,4 @@
 API Design types,
 - REST
 - SOAP
+- Web API
