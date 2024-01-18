@@ -27,6 +27,7 @@ public class TestController {
 	@GetMapping("/gSon")
 	public String toGson(@PathVariable String st) {
 		return toGson(st);
+		System.out.println();
 	}
 	
 	@GetMapping("/test/{st}")
