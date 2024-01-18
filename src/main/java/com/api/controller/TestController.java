@@ -15,9 +15,6 @@ import com.api.service.TestService;
 @RestController
 @RequestMapping("/restAPI")
 public class TestController {
-
-	@Autowired
-	private TestService testService;
 	
 	@GetMapping("/date")
 	public LocalDateTime getDateTime() {
