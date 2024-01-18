@@ -1,5 +1,7 @@
 package com.api.controller;
 
+import java.time.LocalDateTime;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +18,11 @@ public class TestController {
 
 	@Autowired
 	private TestService testService;
+	
+	@GetMapping("/date")
+	public LocalDateTime getDateTime() {
+		return LocalDateTime.now();
+	}
 	
 	@GetMapping("/test/{st}")
 	@ResponseStatus(code = HttpStatus.GONE)
