@@ -24,6 +24,11 @@ public class TestController {
 		return LocalDateTime.now();
 	}
 	
+	@GetMapping("/gSon")
+	public String toGson(@PathVariable String st) {
+		return toGson(st);
+	}
+	
 	@GetMapping("/test/{st}")
 	@ResponseStatus(code = HttpStatus.GONE)
 	public String greetMsg(@PathVariable String st) {
