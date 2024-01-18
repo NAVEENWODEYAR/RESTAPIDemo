@@ -34,9 +34,5 @@ public class TestController {
 	public String greetMsg(@PathVariable String st) {
 		return "Welcome to the family "+st;
 	}
-	
-	@GetMapping("/sum")
-	public int add() {
-		return testService.add();
-	}
+
 }
