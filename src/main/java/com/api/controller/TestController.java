@@ -17,6 +17,7 @@ import com.api.service.TestService;
 public class TestController {
 	
 	@GetMapping("/date")
+	@ResponseStatus(code = HttpStatus.FOUND)
 	public LocalDateTime getDateTime() {
 		return LocalDateTime.now();
 	}
