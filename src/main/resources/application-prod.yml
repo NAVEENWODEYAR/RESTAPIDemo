@@ -4,4 +4,9 @@ server:
   
 spring:
   application:
-    name: REST
+    name: Staging Env
+  security:
+    user:
+      name: rest
+      password: rest
+ 
