@@ -23,6 +23,7 @@ public class TestController {
 	}
 	
 	@GetMapping("/gSon")
+	@ResponseStatus(code = HttpStatus.FOUND)
 	public String toGson(@PathVariable String st) {
 		return toGson(st);
 	}
