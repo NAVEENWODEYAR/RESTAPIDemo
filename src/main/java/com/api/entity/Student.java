@@ -17,4 +17,6 @@ public class Student {
     private int stId;
     private String stName;
     private String stMail;
+    private String stClass;
+    private String stGrade;
 }
