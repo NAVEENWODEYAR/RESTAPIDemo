@@ -10,7 +10,7 @@ public class StudentControler {
     
     @GetMapping
     @ResponseStatus(code = HttpStatus.OK)
-    public String greetmst() {
+    public String greetMsg() {
 	return "Welcome to the application,";
     }
 }
