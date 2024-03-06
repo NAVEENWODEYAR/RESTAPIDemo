@@ -15,6 +15,7 @@ public class StudentControler {
     }
     
     @GetMapping("responseEntity")
+    @ResponseStatus(code = HttpStatus.NON_AUTHORITATIVE_INFORMATION)
     public ResponseEntity<String> response(){
 	return new ResponseEntity<String>("RESPONSEENTITY", HttpStatus.ACCEPTED);
     }
