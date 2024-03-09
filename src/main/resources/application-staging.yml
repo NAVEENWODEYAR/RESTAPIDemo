@@ -7,6 +7,6 @@ spring:
     name: Staging Env
   security:
     user:
-      name: rest
-      password: rest
+      name: staging
+      password: staging
  
