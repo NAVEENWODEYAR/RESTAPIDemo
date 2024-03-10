@@ -1,7 +1,7 @@
 ReleaseNotes.,
-Project Name: SriMadBhavadGita
+Project Name: Gita
 Client Name:
 Plan Date: 27-02-2024
 Start Date: 28-02-2024
-Release Date:
-Release Version:
+Release Date: 
+Release Version: 1.0
