@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.api.entity.Student;
 
-public interface StudnetRepo extends JpaRepository<Student, Integer>{
+public interface StudentRepo extends JpaRepository<Student, Integer>{
 
 }
