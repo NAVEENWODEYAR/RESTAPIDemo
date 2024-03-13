@@ -7,7 +7,6 @@ import com.api.repo.StudentRepo;
 
 @Service
 public class StudentService {
-
     @Autowired
     private StudentRepo studentRepo=null;
 }
