@@ -9,5 +9,5 @@ import com.api.repo.StudentRepo;
 public class StudentService {
 
     @Autowired
-    private StudentRepo studentRepo;
+    private StudentRepo studentRepo=null;
 }
