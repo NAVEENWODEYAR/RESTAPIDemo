@@ -34,7 +34,7 @@ public class Student {
 	
 	private String studentInfo;
 	
-	@OneToOne
+	@OneToOne(mappedBy = "student")
 	private Laptop laptop;
 	
 
