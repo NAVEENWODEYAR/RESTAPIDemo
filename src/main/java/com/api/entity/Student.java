@@ -3,6 +3,8 @@
  */
 package com.api.entity;
 
+import java.util.UUID;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.Entity;
@@ -27,8 +29,8 @@ import lombok.NoArgsConstructor;
 public class Student {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
-	private Long studentId;
+	@GeneratedValue
+	private UUID studentId;
 	
 	private String studentName;
 	

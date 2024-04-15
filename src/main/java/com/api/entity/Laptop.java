@@ -1,5 +1,7 @@
 package com.api.entity;
 
+import java.util.UUID;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.*;
@@ -14,8 +16,8 @@ import lombok.*;
 public class Laptop {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long laptopId;
+	@GeneratedValue
+	private UUID laptopId;
 	
 	@Column(name = "MODEL_NUMBER",unique = true)
 	private String modelNumber;
