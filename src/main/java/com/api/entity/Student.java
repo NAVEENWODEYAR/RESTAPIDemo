@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -30,13 +31,17 @@ public class Student {
 	
 	@Id
 	@GeneratedValue
+	@Column(name = "STUDENT_ID")
 	private UUID studentId;
 	
+	@Column(name = "STUDENT_NAME")
 	private String studentName;
 	
+	@Column(name = "STUDENT_INFO")
 	private String studentInfo;
 	
 	@OneToOne(mappedBy = "student")
+	@Column(name = "LAPTOP")
 	private Laptop laptop;
 	
 
