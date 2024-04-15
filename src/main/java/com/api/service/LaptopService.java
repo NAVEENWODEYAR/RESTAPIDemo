@@ -28,6 +28,7 @@ public class LaptopService {
 
 	@PostConstruct
 	public void addDataToDb() {
+		@SuppressWarnings("unchecked")
 		List<Laptop> person = (List<Laptop>) IntStream.rangeClosed(1, 1000).
 					mapToObj(i-> new Laptop(null, "P"+i,"Q"+i, null, null));
 		laptopRepo.saveAll(person);
