@@ -17,3 +17,5 @@
     jpa:
       repositories:
         enabled: true
+  logging:
+  level: DEBUG

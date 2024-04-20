@@ -28,6 +28,7 @@ public class Laptop {
 	@Column(name = "LAPTOP_PRICE")
 	private Double laptopPrice;
 	
-	@OneToOne
+	@ManyToOne
+	@JoinColumn(name = "STUDENT_ID",insertable = false,updatable = false)
 	private Student student;
 }

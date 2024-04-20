@@ -7,11 +7,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * 
  */
 @RestController
 @RequestMapping("/laptop")
+@Slf4j
 public class LapController {
 
 	@GetMapping("/test")

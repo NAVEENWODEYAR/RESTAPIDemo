@@ -1,12 +1,11 @@
 package com.api.entity;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
+import jakarta.persistence.*;
+import lombok.Data;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.PreUpdate;
-
+@Data
+@MappedSuperclass
 public class AbstractEntity {
     
     @Column(name = "CREATED_BY")
