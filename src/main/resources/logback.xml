@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- Appender & Logger config here -->
+	<appender name="myConsoleAppender" class="ch.qos.logback.core.ConnsoleAppender">
+		<encoder>
+			<pattern> %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="myFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy"></rollingPolicy>
+	<filePattern>restApp-%d{yy-MM-DD_HH:mm}.%i.log</filePattern>
+	<maxFileSize>100MB</maxFileSize>
+	<maxHistory>10</maxHistory>
+		<encoder>
+			<pattern> %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} %msg%n</pattern>
+		</encoder>
+		<file>
+			restApp.log
+		</file>
+	</appender>
+	<root>
+	<appender-ref ref="myConsoleAppender"/>
+	<appender-ref ref="myFileAppender"/>
+	</root>
+</configuration>
