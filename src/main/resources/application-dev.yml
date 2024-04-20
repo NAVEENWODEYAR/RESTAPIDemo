@@ -18,4 +18,4 @@
       repositories:
         enabled: true
   logging:
-  level: DEBUG
+    level: DEBUG
