@@ -7,13 +7,14 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.*;
 
+@EqualsAndHashCode(callSuper = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "JPA_LAPTOP")
-public class Laptop {
+public class Laptop extends AbstractEntity {
 
 	@Id
 	@GeneratedValue
