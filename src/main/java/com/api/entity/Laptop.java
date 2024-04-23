@@ -18,6 +18,7 @@ public class Laptop extends AbstractEntity {
 
 	@Id
 	@GeneratedValue
+	@Column(name = "LAPTOP_ID")
 	private UUID laptopId;
 	
 	@Column(name = "MODEL_NUMBER",unique = true)

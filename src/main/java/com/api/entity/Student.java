@@ -34,7 +34,6 @@ public class Student {
 	private String studentInfo;
 	
 	@OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
-	@Column(name = "LAPTOP")
 	private List<Laptop> laptop;
 	
 
