@@ -30,7 +30,7 @@ public class Laptop extends AbstractEntity {
 	@Column(name = "LAPTOP_PRICE")
 	private Double laptopPrice;
 	
-	@ManyToOne
-	@JoinColumn(name = "STUDENT_ID",insertable = false,updatable = false)
-	private Student student;
+//	@ManyToOne
+//	@JoinColumn(name = "STUDENT_ID",insertable = false,updatable = false)
+//	private Student student;
 }
