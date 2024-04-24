@@ -3,8 +3,10 @@
  */
 package com.api.entity;
 
+import java.time.LocalDate;
 import java.util.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.CascadeType;
@@ -20,6 +22,7 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "JPA_STUDENT")
+@JsonIgnoreProperties
 public class Student {
 	
 	@Id
@@ -33,8 +36,10 @@ public class Student {
 	@Column(name = "STUDENT_INFO")
 	private String studentInfo;
 	
+	@Column(name = "DOB")
+	private LocalDate dob;
+	
 	@OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
 	private List<Laptop> laptop;
 	
-
 }
