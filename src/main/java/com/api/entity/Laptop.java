@@ -5,6 +5,7 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
 import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
@@ -28,7 +29,9 @@ public class Laptop extends AbstractEntity {
 	private String brandName;
 	
 	@Column(name = "LAPTOP_PRICE")
+	@Min(5000)
 	private Double laptopPrice;
+	
 	
 	@ManyToOne
 	@JoinColumn(name = "STUDENT_ID",insertable = false,updatable = false)

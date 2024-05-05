@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.CascadeType;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,6 +32,7 @@ public class Student {
 	private UUID studentId;
 	
 	@Column(name = "STUDENT_NAME")
+	@NotBlank
 	private String studentName;
 	
 	@Column(name = "STUDENT_INFO")
