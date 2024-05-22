@@ -2,13 +2,10 @@ package com.api.service;
 
 import java.util.*;
 import java.util.stream.IntStream;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.api.entity.Laptop;
 import com.api.repo.LaptopRepo;
-
 import jakarta.annotation.PostConstruct;
 
 
