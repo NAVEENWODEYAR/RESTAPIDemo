@@ -11,8 +11,10 @@ public class SortString {
 
 	static void sortString() {
         List<String> strList = Arrays.asList("Java", "Python", "C#", "HTML", "Kotlin", "C++", "COBOL", "C");
-        Object[] array = strList.parallelStream().sorted(Comparator.reverseOrder()).toArray();
-        System.out.println(Arrays.toString(array));
+        strList.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
+        System.out.println("\n***************\n");
+        strList.parallelStream().sorted(Comparator.comparing(String::length)).forEachOrdered(System.out::println);
+
 	}
 	
 	public static void main(String[] args) {
