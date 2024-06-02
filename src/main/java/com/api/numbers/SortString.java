@@ -14,7 +14,7 @@ public class SortString {
         strList.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
         System.out.println("\n***************\n");
         strList.parallelStream().sorted(Comparator.comparing(String::length)).forEachOrdered(System.out::println);
-
+        
 	}
 	
 	public static void main(String[] args) {
