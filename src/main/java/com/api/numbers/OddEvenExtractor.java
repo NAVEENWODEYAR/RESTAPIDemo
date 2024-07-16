@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * 
+ * @apiNote, Collectors.groupingBy 
  */
 public class OddEvenExtractor {
 

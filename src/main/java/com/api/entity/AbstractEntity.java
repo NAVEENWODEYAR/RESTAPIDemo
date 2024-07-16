@@ -2,7 +2,11 @@ package com.api.entity;
 
 import java.time.*;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
+
+/**
+ * @apiNote, ABstractEntity class acts as super mapped class,
+ */
 
 @Data
 @MappedSuperclass
