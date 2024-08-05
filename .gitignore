@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## class files ##
+*.class 
+*.yml 
+*.properties
+*.idea
