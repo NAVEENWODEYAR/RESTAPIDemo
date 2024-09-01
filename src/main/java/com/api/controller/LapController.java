@@ -27,8 +27,10 @@ public class LapController {
 	public ResponseEntity<?> consumeApi1(){
 		log.debug("Debugger");
 		RestTemplate restTemplate = new RestTemplate();
-		
-		return ResponseEntity.ok(restTemplate.getForObject("https://www.linkedin.com/feed/", Object.class));
+		String url = "https://dummy.restapiexample.com/api/v1/employees";
+		Object dummyData = restTemplate.getForObject(url, Object.class);
+//		return ResponseEntity.ok(restTemplate.getForObject("https://www.linkedin.com/feed/", Object.class));
+		return ResponseEntity.ok(dummyData);
 	}
 	   @GetMapping("/consumeApi")
 	    public ResponseEntity<String> consumeApi() {
