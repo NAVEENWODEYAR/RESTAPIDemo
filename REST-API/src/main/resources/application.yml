@@ -3,4 +3,4 @@ server:
 
 spring:
    application:
-      name: REST_API
+      name: REST_API_DEMO_APP
