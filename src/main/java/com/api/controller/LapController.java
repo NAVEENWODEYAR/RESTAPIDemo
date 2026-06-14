@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
  * @apiNote, Controller class for Laptop Entity,
  */
 @RestController
-@RequestMapping("/laptop")
+@RequestMapping("/v1/laptop")
 @Slf4j
 public class LapController {
 
