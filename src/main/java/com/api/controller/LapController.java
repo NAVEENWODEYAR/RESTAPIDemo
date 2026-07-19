@@ -25,7 +25,7 @@ public class LapController {
 	
 	@GetMapping("/get")
 	public ResponseEntity<?> consumeApi1(){
-		log.debug("Debugger");
+		log.debug("Debugg log");
 		RestTemplate restTemplate = new RestTemplate();
 		String url = "https://dummy.restapiexample.com/api/v1/employees";
 		Object dummyData = restTemplate.getForObject(url, Object.class);
@@ -44,7 +44,7 @@ public class LapController {
 	            return ResponseEntity.status(HttpStatus.UNSUPPORTED_MEDIA_TYPE).body("Unsupported content type");
 	        } catch (RestClientException ex) {
 	            // Handle other errors
-	            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Exception error occurred: " + ex.getMessage());
+	            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Exception/Error occurred: " + ex.getMessage());
 	        }
 	    }
 }
