@@ -20,7 +20,7 @@ public class LapController {
 	@ResponseStatus(code = HttpStatus.FOUND)
 	public ResponseEntity<String> test(){
 		log.warn("Warn Log");
-		return ResponseEntity.ok("Welcome to Swagger UI,");
+		return ResponseEntity.ok("Welcome to the Swagger UI,");
 	}
 	
 	@GetMapping("/get")
