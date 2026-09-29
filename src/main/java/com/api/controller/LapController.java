@@ -44,7 +44,7 @@ public class LapController {
 	            return ResponseEntity.status(HttpStatus.UNSUPPORTED_MEDIA_TYPE).body("Unsupported content type");
 	        } catch (RestClientException ex) {
 	            // Handle other errors
-	            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Exception/Error occurred: " + ex.getMessage());
+	            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Exception/Error occurred while calling external API:" + ex.getMessage());
 	        }
 	    }
 }
