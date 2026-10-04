@@ -32,7 +32,7 @@ public class LapController {
 //		return ResponseEntity.ok(restTemplate.getForObject("https://www.linkedin.com/feed/", Object.class));
 		return ResponseEntity.ok(dummyData);
 	}
-	   @GetMapping("/consumeApi")
+	   @GetMapping("/api")
 	    public ResponseEntity<String> consumeApi() {
 	        String url = "https://www.linkedin.com/feed"; // Replace with the actual URL
 			RestTemplate restTemplate = new RestTemplate();
