@@ -19,13 +19,13 @@ public class LapController {
 	@GetMapping("/test")
 	@ResponseStatus(code = HttpStatus.FOUND)
 	public ResponseEntity<String> test(){
-		log.warn("Warn Log");
+		log.warn("Warn level log");
 		return ResponseEntity.ok("Welcome to the Swagger UI,");
 	}
 	
 	@GetMapping("/get")
 	public ResponseEntity<?> consumeApi1(){
-		log.debug("Debugg log");
+		log.debug("Debug level log");
 		RestTemplate restTemplate = new RestTemplate();
 		String url = "https://dummy.restapiexample.com/api/v1/employees";
 		Object dummyData = restTemplate.getForObject(url, Object.class);
